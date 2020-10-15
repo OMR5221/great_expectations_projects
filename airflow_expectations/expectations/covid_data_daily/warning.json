@@ -1,0 +1,636 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "historic.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 13539,
+        "min_value": 11078
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_column_count_to_equal",
+      "kwargs": {
+        "value": 55
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "date",
+          "state",
+          "positive",
+          "probableCases",
+          "negative",
+          "pending",
+          "totalTestResults",
+          "hospitalizedCurrently",
+          "hospitalizedCumulative",
+          "inIcuCurrently",
+          "inIcuCumulative",
+          "onVentilatorCurrently",
+          "onVentilatorCumulative",
+          "recovered",
+          "dataQualityGrade",
+          "lastUpdateEt",
+          "dateModified",
+          "checkTimeEt",
+          "death",
+          "hospitalized",
+          "dateChecked",
+          "totalTestsViral",
+          "positiveTestsViral",
+          "negativeTestsViral",
+          "positiveCasesViral",
+          "deathConfirmed",
+          "deathProbable",
+          "totalTestEncountersViral",
+          "totalTestsPeopleViral",
+          "totalTestsAntibody",
+          "positiveTestsAntibody",
+          "negativeTestsAntibody",
+          "totalTestsPeopleAntibody",
+          "positiveTestsPeopleAntibody",
+          "negativeTestsPeopleAntibody",
+          "totalTestsPeopleAntigen",
+          "positiveTestsPeopleAntigen",
+          "totalTestsAntigen",
+          "positiveTestsAntigen",
+          "fips",
+          "positiveIncrease",
+          "negativeIncrease",
+          "total",
+          "totalTestResultsSource",
+          "totalTestResultsIncrease",
+          "posNeg",
+          "deathIncrease",
+          "hospitalizedIncrease",
+          "hash",
+          "commercialScore",
+          "negativeRegularScore",
+          "negativeScore",
+          "positiveScore",
+          "score",
+          "grade"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "state"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_be_in_set",
+      "kwargs": {
+        "column": "state",
+        "value_set": [
+          "AK",
+          "AL",
+          "AR",
+          "AS",
+          "AZ",
+          "CA",
+          "CO",
+          "CT",
+          "DC",
+          "DE",
+          "FL",
+          "GA",
+          "GU",
+          "HI",
+          "IA",
+          "ID",
+          "IL",
+          "IN",
+          "KS",
+          "KY",
+          "LA",
+          "MA",
+          "MD",
+          "ME",
+          "MI",
+          "MN",
+          "MO",
+          "MP",
+          "MS",
+          "MT",
+          "NC",
+          "ND",
+          "NE",
+          "NH",
+          "NJ",
+          "NM",
+          "NV",
+          "NY",
+          "OH",
+          "OK",
+          "OR",
+          "PA",
+          "PR",
+          "RI",
+          "SC",
+          "SD",
+          "TN",
+          "TX",
+          "UT",
+          "VA",
+          "VI",
+          "VT",
+          "WA",
+          "WI",
+          "WV",
+          "WY"
+        ]
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_kl_divergence_to_be_less_than",
+      "kwargs": {
+        "column": "state",
+        "partition_object": {
+          "values": [
+            "AK",
+            "AL",
+            "AR",
+            "AS",
+            "AZ",
+            "CA",
+            "CO",
+            "CT",
+            "DC",
+            "DE",
+            "FL",
+            "GA",
+            "GU",
+            "HI",
+            "IA",
+            "ID",
+            "IL",
+            "IN",
+            "KS",
+            "KY",
+            "LA",
+            "MA",
+            "MD",
+            "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MP",
+            "MS",
+            "MT",
+            "NC",
+            "ND",
+            "NE",
+            "NH",
+            "NJ",
+            "NM",
+            "NV",
+            "NY",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "PR",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VA",
+            "VI",
+            "VT",
+            "WA",
+            "WI",
+            "WV",
+            "WY"
+          ],
+          "weights": [
+            0.017710618246811277,
+            0.017629376878706637,
+            0.017710618246811277,
+            0.016898204565764886,
+            0.017873100983020553,
+            0.017873100983020553,
+            0.017791859614915913,
+            0.017629376878706637,
+            0.017791859614915913,
+            0.017710618246811277,
+            0.017873100983020553,
+            0.017873100983020553,
+            0.016898204565764886,
+            0.017873100983020553,
+            0.017710618246811277,
+            0.017629376878706637,
+            0.017873100983020553,
+            0.017710618246811277,
+            0.017710618246811277,
+            0.017710618246811277,
+            0.017629376878706637,
+            0.021285238443415386,
+            0.017791859614915913,
+            0.017629376878706637,
+            0.01811682508733447,
+            0.017710618246811277,
+            0.017629376878706637,
+            0.016898204565764886,
+            0.017629376878706637,
+            0.017629376878706637,
+            0.017873100983020553,
+            0.017629376878706637,
+            0.017791859614915913,
+            0.017873100983020553,
+            0.019741652449427247,
+            0.017710618246811277,
+            0.017791859614915913,
+            0.017873100983020553,
+            0.017791859614915913,
+            0.017629376878706637,
+            0.017873100983020553,
+            0.017710618246811277,
+            0.016898204565764886,
+            0.01811682508733447,
+            0.017873100983020553,
+            0.017629376878706637,
+            0.017791859614915913,
+            0.017873100983020553,
+            0.017629376878706637,
+            0.01836054919164839,
+            0.016898204565764886,
+            0.017710618246811277,
+            0.021285238443415386,
+            0.017873100983020553,
+            0.017710618246811277,
+            0.017629376878706637
+          ]
+        },
+        "threshold": 0.6
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "date"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "date",
+        "max_value": 20200123,
+        "min_value": 20200121
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "date",
+        "max_value": 20201010,
+        "min_value": 20201008
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "date",
+        "max_value": 20200635.935169388,
+        "min_value": 20200633.935169388
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "date",
+        "max_value": 20200623.0,
+        "min_value": 20200621.0
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": false,
+        "column": "date",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              20200314,
+              20200316
+            ],
+            [
+              20200427,
+              20200429
+            ],
+            [
+              20200621,
+              20200623
+            ],
+            [
+              20200815,
+              20200817
+            ],
+            [
+              20200928,
+              20200930
+            ]
+          ]
+        }
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "lastUpdateEt"
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    },
+    {
+      "expectation_type": "expect_column_value_lengths_to_be_between",
+      "kwargs": {
+        "column": "lastUpdateEt",
+        "min_value": 1
+      },
+      "meta": {
+        "BasicSuiteBuilderProfiler": {
+          "confidence": "very low"
+        }
+      }
+    }
+  ],
+  "meta": {
+    "BasicSuiteBuilderProfiler": {
+      "batch_kwargs": {
+        "data_asset_name": "historic",
+        "datasource": "data__dir",
+        "path": "/home/oramirez/projects/airflow_dags/covid_data_daily/great_expectations/../data/historic/v1_states_daily.json"
+      },
+      "created_at": 1602352975.283735,
+      "created_by": "BasicSuiteBuilderProfiler"
+    },
+    "citations": [
+      {
+        "batch_kwargs": {
+          "data_asset_name": "historic",
+          "datasource": "data__dir",
+          "path": "/home/oramirez/projects/airflow_dags/covid_data_daily/great_expectations/../data/historic/v1_states_daily.json"
+        },
+        "batch_markers": {
+          "ge_load_time": "20201010T180254.489090Z",
+          "pandas_data_fingerprint": "2b4210f5528ae32c2dfee1b877fed570"
+        },
+        "batch_parameters": null,
+        "citation_date": "20201010T180255.312723Z",
+        "comment": "BasicSuiteBuilderProfiler added a citation based on the current batch."
+      }
+    ],
+    "columns": {
+      "checkTimeEt": {
+        "description": ""
+      },
+      "commercialScore": {
+        "description": ""
+      },
+      "dataQualityGrade": {
+        "description": ""
+      },
+      "date": {
+        "description": ""
+      },
+      "dateChecked": {
+        "description": ""
+      },
+      "dateModified": {
+        "description": ""
+      },
+      "death": {
+        "description": ""
+      },
+      "deathConfirmed": {
+        "description": ""
+      },
+      "deathIncrease": {
+        "description": ""
+      },
+      "deathProbable": {
+        "description": ""
+      },
+      "fips": {
+        "description": ""
+      },
+      "grade": {
+        "description": ""
+      },
+      "hash": {
+        "description": ""
+      },
+      "hospitalized": {
+        "description": ""
+      },
+      "hospitalizedCumulative": {
+        "description": ""
+      },
+      "hospitalizedCurrently": {
+        "description": ""
+      },
+      "hospitalizedIncrease": {
+        "description": ""
+      },
+      "inIcuCumulative": {
+        "description": ""
+      },
+      "inIcuCurrently": {
+        "description": ""
+      },
+      "lastUpdateEt": {
+        "description": ""
+      },
+      "negative": {
+        "description": ""
+      },
+      "negativeIncrease": {
+        "description": ""
+      },
+      "negativeRegularScore": {
+        "description": ""
+      },
+      "negativeScore": {
+        "description": ""
+      },
+      "negativeTestsAntibody": {
+        "description": ""
+      },
+      "negativeTestsPeopleAntibody": {
+        "description": ""
+      },
+      "negativeTestsViral": {
+        "description": ""
+      },
+      "onVentilatorCumulative": {
+        "description": ""
+      },
+      "onVentilatorCurrently": {
+        "description": ""
+      },
+      "pending": {
+        "description": ""
+      },
+      "posNeg": {
+        "description": ""
+      },
+      "positive": {
+        "description": ""
+      },
+      "positiveCasesViral": {
+        "description": ""
+      },
+      "positiveIncrease": {
+        "description": ""
+      },
+      "positiveScore": {
+        "description": ""
+      },
+      "positiveTestsAntibody": {
+        "description": ""
+      },
+      "positiveTestsAntigen": {
+        "description": ""
+      },
+      "positiveTestsPeopleAntibody": {
+        "description": ""
+      },
+      "positiveTestsPeopleAntigen": {
+        "description": ""
+      },
+      "positiveTestsViral": {
+        "description": ""
+      },
+      "probableCases": {
+        "description": ""
+      },
+      "recovered": {
+        "description": ""
+      },
+      "score": {
+        "description": ""
+      },
+      "state": {
+        "description": ""
+      },
+      "total": {
+        "description": ""
+      },
+      "totalTestEncountersViral": {
+        "description": ""
+      },
+      "totalTestResults": {
+        "description": ""
+      },
+      "totalTestResultsIncrease": {
+        "description": ""
+      },
+      "totalTestResultsSource": {
+        "description": ""
+      },
+      "totalTestsAntibody": {
+        "description": ""
+      },
+      "totalTestsAntigen": {
+        "description": ""
+      },
+      "totalTestsPeopleAntibody": {
+        "description": ""
+      },
+      "totalTestsPeopleAntigen": {
+        "description": ""
+      },
+      "totalTestsPeopleViral": {
+        "description": ""
+      },
+      "totalTestsViral": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.12.1",
+    "notes": {
+      "content": [
+        "#### This is an _example_ suite\n\n- This suite was made by quickly glancing at 1000 rows of your data.\n- This is **not a production suite**. It is meant to show examples of expectations.\n- Because this suite was auto-generated using a very basic profiler that does not know your data like you do, many of the expectations may not be meaningful.\n"
+      ],
+      "format": "markdown"
+    }
+  }
+}
