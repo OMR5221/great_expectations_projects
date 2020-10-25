@@ -1,0 +1,3 @@
+*.html
+airflow_expectations/uncommitted/validations/*
+airflow_expectations/uncommitted/data_docs/local_site/validations/default/*
